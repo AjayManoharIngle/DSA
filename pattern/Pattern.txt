@@ -1,0 +1,7 @@
+-> Pattern is having nested loops
+Outer loops - number of rows
+Inner loops - number of columns
+
+
+Rule 1 : count number of rows for outer loops
+Rule 2 : for loop for inner loop focus on columns and connect them somehow to rows
