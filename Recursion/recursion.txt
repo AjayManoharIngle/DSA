@@ -1,0 +1,2 @@
+1. When function calls itself is called as recursion
+2. recursion will run until base condition is met
