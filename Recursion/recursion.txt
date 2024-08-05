@@ -1,2 +1,19 @@
 1. When function calls itself is called as recursion
 2. recursion will run until base condition is met
+
+Trick 1 : Que to be like related to count 
+structure :
+fun(){
+
+	if(condition is pass) return 1;
+	else return 0;
+	
+	int l = fun();
+	int r = fun();
+	return l+r;
+}
+
+Trick2 : que to be print subseq or anything - use paramter recursion
+
+Trick3 : que to be print ans only 1 time 
+- return true/false anfd avoid multiple resusion calls
