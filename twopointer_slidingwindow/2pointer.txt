@@ -1,0 +1,15 @@
+1. constant window : max sum from consecative array which is window size is 4 
+-> take two pointer l=0 and r=k-1 and update sum till r < n
+-> sum = sum -arr[l], l++, r++, sum = sum+arr[r], take max = max(max,sum)
+
+2. Longest subarray and sub string where <condition> like s <= k 
+-> genrating all sub array - brute force 
+-> expand - r and shrink - l
+
+3. no of subarray with some condition like sum <= k 
+-> solve using no of sub array with sum <=k =>x
+-> solve using no of sub arry with sum <=k-1 => y
+-> always => x-y
+
+4. short/min window with some condition :
+-> shrink window and store it
