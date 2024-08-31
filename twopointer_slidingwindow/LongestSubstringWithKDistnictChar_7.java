@@ -8,6 +8,7 @@ public class LongestSubstringWithKDistnictChar_7 {
 	public static void main(String[] args) {
 		
 		// longest substring with k distict charcter
+		// [bbcccccc]
 		
 		String str = "aaabbccccccd";
 		int k=2;

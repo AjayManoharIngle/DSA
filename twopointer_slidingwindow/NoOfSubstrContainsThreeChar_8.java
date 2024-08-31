@@ -1,17 +1,14 @@
 package twopointer_slidingwindow;
 
-import java.util.HashSet;
-
 public class NoOfSubstrContainsThreeChar_8 {
 
 	public static void main(String[] args) {
 		
 		// number of sub string containing all three charcater
 		
-		String str = "bbacba";
+		String str = "abcabc";
 		
 		// T.C = O(N^2) and S.C=O(1)
-		bruteForce1(str);
 		bruteForce2(str);
 		
 		betterSol(str);
@@ -46,24 +43,6 @@ public class NoOfSubstrContainsThreeChar_8 {
 					break;
 				}
 			}
-		}
-		System.out.println(noOfStr);
-	}
-
-	private static void bruteForce1(String str) {
-		int noOfStr = 0;
-		for(int i=0;i<str.length();i++) {
-			HashSet<Character> set = new HashSet<>();
-			int len = 0;
-			for(int j=i;j<str.length();j++) {
-				set.add(str.charAt(j));
-				if(set.size() == 3) {
-					len++;
-				}else {
-					len = 0;
-				}
-			}
-			noOfStr += len;
 		}
 		System.out.println(noOfStr);
 	}
