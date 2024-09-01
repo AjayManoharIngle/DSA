@@ -1,0 +1,17 @@
+hashing : Hashing is a technique used in data structures that efficiently stores and 
+retrieves data in a way that allows for quick access
+
+1. you need to create pre fetch hash array for solve problem 
+2. hash array length can be large a 10 ^ 8
+3. Sorted hash map in avg, worst, best case is O(logn) => storing & fetching
+3. UnSorted hash map in storing = avg,best-O(1), worst-O(n) => fetching
+
+4. We have differnt ways of hashing : 
+4.1 : Division Method - use modulo function => a % 2 = rem
+4.2 : we have linear chaining hashing 
+4.3 : [2,22,24,23,34,5] => rem [2,2,4,3,4,5] 
+     where is multiple rem it is linear chaining format
+     
+5. collision -> after done modulo in worst case it will hit to same keys of hash 
+means same index again and again
+     
