@@ -1,0 +1,65 @@
+1.Selection sort : select minimum value and swap it 
+1=> [ 13 46 24 52 20 9 ] - min = 9, swap(9,13)
+2=> 9  [ 46 24 52 20 13 ] - min = 13, swap(13,36)
+3=> 9 13 [ 24 52 20 46 ] - min = 20, swap(20,24)
+4=> 9 13 20 [ 52 24 46] - min = 24, swap(24,52)
+5=> 9 13 20 24 [52 46 ] - min = 46, swap(46,52)
+ => 9 13 20 24 46 [52] 
+final Ans => 9 13 20 24 46 52
+- best,avg,wors - O(n^2)
+
+2. Bubble Sort : push max number to last and swap adjacent numbers 
+[ 13 46 24 52 20 9 ] 
+iteration 1 : 
+13 24 46 52 20 9
+13 24 46 20 52 9
+final => 13 24 46 20 9 52 => sorted [52]
+		
+iteration 2 :
+13 24 20 46 9 52
+final => 13 24 20 9 46 52 => sorted [46,52]
+		
+iteration 3 :
+13 20 24 9 46 52
+final => 13 20 9 24 46 52 => sorted [24,46,52]
+		
+iteration 4 :
+final => 13 9 20 24 46 52 => sorted [20,24,46,52]
+		
+iteration 5 :
+final => 9 13 20 24 46 52 => sorted [13,20,24,46,52]
+		
+9 is already sorted =>  [9,13,20,24,46,52]
+best - if swap opeartion is not happed means array is sorted - O(n)
+worst, avag - O(n^2)
+
+3. Insertion Order - do right shift on element if it greater value and swap it
+[ 13 46 24 52 20 9 ] 
+=> [13] 46 24 52 20 9
+=> [13 46] 24 52 20 9
+=> [13 24 46] 52 20 9
+=> [13 24 46 52] 20 9
+=> [13 20 24 46 52] 9
+=> [9 13 20 24 46 52]  
+ best = O(n) and worst,avg - o(n^2)
+ 
+4. Quick Sort : 
+  0   1  2  3  4  5
+[ 13 46 24 52 20 9 ] 
+find pivot el => p = 13
+=> swap [i=1, j=5]
+[ 13 9 24 52 20 46 ]
+=> swap [i=2, j=1] i < j no  swap(pivot, j) => swap(13,arr[1]) 
+[ 9 13 24 52 20 46 ]
+
+9 is already sorted and [24 52 20 46] again do same 
+best,avg,worst - nLog(n) and S.C = O(1)
+
+5. Merge Sort : 
+  0   1  2  3  4  5
+[ 13 46 24 52 20 9 ] 
+=> mid= 2, [13,46,24] [20,9]
+=> [13,46] [24] and [20] [9]
+=> [13,24,46] and [20][9]
+=> [9,13,20,24,46]
+=> best,avg,worst - nLog(n) and S.C = O(n)
