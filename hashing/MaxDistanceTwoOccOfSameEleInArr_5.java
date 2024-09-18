@@ -13,7 +13,7 @@ class StoreIndex {
 	}
 }
 
-public class MaxDistanceTwoOccOfSameEleInArr {
+public class MaxDistanceTwoOccOfSameEleInArr_5 {
 
 	public static void main(String[] args) {
 		// array with repeated elements, the task 
