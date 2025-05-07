@@ -1,0 +1,3 @@
+Binary search is always applied on sorted array
+we use low,mid,high words
+if no item found return -1
